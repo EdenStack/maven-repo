@@ -98,7 +98,6 @@
                     <repositoryName>maven-repo</repositoryName>
                     <!-- github 仓库所有者 -->
                     <repositoryOwner>Tneciv</repositoryOwner>
-                    <userName>Tneciv</userName>
                 </configuration>
                 <executions>
                     <execution>
