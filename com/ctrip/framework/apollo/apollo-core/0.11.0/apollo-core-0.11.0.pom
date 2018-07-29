@@ -4,56 +4,40 @@
 	<parent>
 		<groupId>com.ctrip.framework.apollo</groupId>
 		<artifactId>apollo</artifactId>
-		<version>0.11.0-SNAPSHOT</version>
+		<version>0.11.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>apollo-client</artifactId>
-	<name>Apollo Client</name>
+	<artifactId>apollo-core</artifactId>
+	<name>Apollo Core</name>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.7</java.version>
 		<github.path>${project.artifactId}</github.path>
 	</properties>
 	<dependencies>
-		<!-- apollo -->
+		<!-- json -->
 		<dependency>
-			<groupId>com.ctrip.framework.apollo</groupId>
-			<artifactId>apollo-core</artifactId>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
-		<!-- end of apollo -->
-		<!-- guice -->
+		<!-- end of json -->
+		<!-- util -->
 		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
 		</dependency>
-		<!-- end of guice -->
+		<!-- end of util -->
 		<!-- log -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
-		<!-- optional spring dependency -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<!-- optional spring boot dependency -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<optional>true</optional>
-		</dependency>
+		<!-- end of log -->
 		<!-- test -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-server</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<!-- take over jcl -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jcl-over-slf4j</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
